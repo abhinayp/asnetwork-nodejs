@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "hot-server": "concurrently \"nodemon index.js \" \"npm run webpack\" \"npm run sass-compile\"",
-    "webpack": "webpack-dev-server ./javascript/main.js",
-    "dev": "webpack --mode development ./javascript/main.js",
-    "sass-compile": "sass --watch scss:css"
+    "webpack": "webpack-dev-server ./src/javascript/main.js",
+    "dev": "webpack --mode development ./src/javascript/main.js",
+    "sass-compile": "sass --watch src/scss:src/css"
   },
   "author": "Abhinay",
   "license": "ISC",

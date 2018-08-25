@@ -5,9 +5,9 @@ var upload = multer();
 var app = express();
 
 app.set('view engine', 'pug');
-app.set('views', './views');
-app.use('/javascript', express.static(__dirname + '/javascript'));
-app.use('/css', express.static(__dirname + '/css'));
+app.set('views', './src/views');
+app.use('/javascript', express.static(__dirname + '/src/javascript'));
+app.use('/css', express.static(__dirname + '/src/css'));
 
 app.get('/', (req, res) => {
   res.render('index')
