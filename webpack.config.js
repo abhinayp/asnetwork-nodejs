@@ -1,12 +1,17 @@
 module.exports = {
-  entry: 'index.js',
+  entry: './src/javascript/main.js',
   output: {
     path: __dirname,
-    filename: 'javascript/bundle.js'
+    filename: './src/javascript/bundle.js'
   },
   mode: 'development',
   module: {
     rules: [
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
