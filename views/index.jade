@@ -4,4 +4,6 @@ block content
   h1= title
   p Welcome to #{title}
   div Posts
+  each post, i in posts
+    div #{post.status}
 
