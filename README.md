@@ -1,5 +1,6 @@
 # **Your Network** - A Social Network
-This is still in beginning
+This is still in beginning \
+[Developing branch](https://github.com/abhinayp/asnetwork-nodejs/tree/express-js-setup)
 
 ***
 **Project Name** - Your Network \
@@ -9,7 +10,7 @@ This is still in beginning
 This is social networking website similar to facebook built using NodeJS \
 _Important libraries used_ - Express, React, MongoDB
 
-### **Features**
+### **Features** (Expected)
 - Users can create profiles, share, like, comment on a post
 - Users can follow another user's profile
 - Feed contains posts shared by users that are followed
@@ -23,5 +24,6 @@ To run in local for **Development**
 
 `git clone git@github.com:abhinayp/asnetwork-nodejs.git` \
 `cd asnetwork-nodejs` \
+`git checkout express-js-setup` \
 `npm install` \
 `npm start`
