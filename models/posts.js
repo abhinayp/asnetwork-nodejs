@@ -6,7 +6,7 @@ var posts = (function() {
     base.mongoClient(function(db, status) {
 
       if (status != 200) {
-        callback(null, 500, err);
+        callback(null, 500);
         return;
       }
 
